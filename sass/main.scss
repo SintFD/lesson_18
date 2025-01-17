@@ -1,0 +1,65 @@
+@import "./utils/utils";
+@import "./utils/normalize";
+@import "./utils/placeholders";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 14px 52px;
+  border-radius: 14.42px;
+  background: rgb(27, 28, 55);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__user-img {
+    width: 28px;
+  }
+
+  &__user-wrapper {
+    display: flex;
+    gap: 12px;
+    color: $primaryColor;
+    font-family: $primaryStyle;
+    font-size: 17.31px;
+    font-weight: 500;
+    line-height: 26px;
+    align-items: center;
+  }
+
+  &__button {
+    padding: 12px 50px;
+    border: 0;
+    border-radius: 12px;
+    background: rgb(117, 121, 255);
+    @extend %button;
+  }
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  width: 1311px;
+  margin: 0 auto;
+}
+
+.nav {
+  &__list {
+    display: flex;
+    gap: 26px;
+  }
+
+  &__item {
+    color: $primaryColor;
+    font-family: $primaryStyle;
+    font-size: 17.31px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+}
